@@ -47,6 +47,7 @@ app.get("/", (req, res) => {
   res.json({ message: "StyleAura Common E-Commerce API Running Successfully!" });
 });
 
+
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(err.status || 500).json({

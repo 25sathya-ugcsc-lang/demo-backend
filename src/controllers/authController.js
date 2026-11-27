@@ -44,7 +44,7 @@ exports.register = async (req, res) => {
       fullName: name || email.split("@")[0],
       email: email.toLowerCase().trim(),
       password: hashedPassword,
-      role: role === "Admin" ? "Admin" : "User",
+      role: "User",
       phone: phone || "",
       address: address || "",
       city: city || "",
